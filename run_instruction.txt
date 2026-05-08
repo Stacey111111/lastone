@@ -1,0 +1,22 @@
+docker exec -it remote_pc_humble bash
+cd Downloads
+git clone https://github.com/Stacey111111/lastone.git
+docker cp publisher.py remote_pc_humble:/root/
+docker cp best.pt remote_pc_humble:/root/
+
+python3 publisher.py
+
+
+
+
+
+ros2 launch turtlebot3_manipulation_bringup hardware.launch.py
+python3 controller.py
+
+
+
+https://universe.roboflow.com/yolo-zxvpk/hand-gesture-r7qgb/dataset/1/download
+
+
+
+
